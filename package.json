@@ -6,9 +6,11 @@
   "author": "5t3ph",
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
+    "copy:icons": "copyfiles -u 1 ./src/icons/**/* public",
     "copy:img": "copyfiles -u 1 ./src/img/**/* public",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy": "npm-run-all --parallel copy:*",
+    "watch:icons": "onchange 'src/icons/**/* ' -- npm run copy:icons",
     "watch:img": "onchange 'src/img/**/*' -- npm run copy:img",
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
