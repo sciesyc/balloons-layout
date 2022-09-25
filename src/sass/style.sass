@@ -1,6 +1,5 @@
 $color-white: #ffffff
 $color-black: #000000
-$color-grey-light: #F7F7F7
 $color-grey: #777777
 $color-brown-light: #BA8554
 $color-brown-dark: #A14F03
@@ -25,7 +24,7 @@ body
   background-color: $color-white
 
 .container
-  background-color: $color-grey-light
+  background-color: #F7F7F7
 
 .header
   height: 95vh
@@ -55,10 +54,7 @@ body
     letter-spacing: 1rem
     text-transform: uppercase
     margin-bottom: 1rem
-    animation-name: leftToRight
-    animation-duration: 1.7s
-    animation-delay: 1s
-    animation-timing-function: ease
+    animation: leftToRight 1.7s ease 1s
     backface-visibility: hidden
   &__secondary
     display: block
@@ -66,10 +62,7 @@ body
     font-size: 4rem
     line-height: 4.8rem
     letter-spacing: .5rem
-    animation-name: rightToLeft
-    animation-duration: 1.7s
-    animation-delay: 1s
-    animation-timing-function: ease
+    animation: rightToLeft 1.7s ease 1s
     backface-visibility: hidden
     margin-bottom: 5rem
 
