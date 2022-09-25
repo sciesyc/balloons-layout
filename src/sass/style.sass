@@ -1,15 +1,18 @@
-*
+*, ::after, ::before
   margin: 0
   padding: 0
   box-sizing: border-box
+
+html
+  font-size: 62.5%
 
 body
   font-family: 'Roboto'
   font-weight: 400
   color: #777777
-  font-size: 16px
-  letter-spacing: 2px
-  padding: 50px
+  font-size: 1.6rem
+  letter-spacing: .2rem
+  padding: 5rem
   background-color: white
 
 .container
@@ -21,11 +24,11 @@ body
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center / cover no-repeat
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%)
   &__logo
-    height: 70px
-    width: 56px
+    height: 7rem
+    width: 5.6rem
     position: absolute
-    top: 50px
-    left: 50px
+    top: 5rem
+    left: 5rem
   &__box
     position: absolute
     width: 100%
@@ -38,11 +41,11 @@ body
   &__main
     display: block
     font-weight: 800
-    font-size: 50px
-    line-height: 60px
-    letter-spacing: 10px
+    font-size: 5rem
+    line-height: 6rem
+    letter-spacing: 1rem
     text-transform: uppercase
-    margin-bottom: 10px
+    margin-bottom: 1rem
     animation-name: leftToRight
     animation-duration: 1.7s
     animation-delay: 1s
@@ -51,42 +54,43 @@ body
   &__secondary
     display: block
     font-weight: 100
-    font-size: 40px
-    line-height: 48px
-    letter-spacing: 5px
+    font-size: 4rem
+    line-height: 4.8rem
+    letter-spacing: .5rem
     animation-name: rightToLeft
     animation-duration: 1.7s
     animation-delay: 1s
     animation-timing-function: ease
     backface-visibility: hidden
-    margin-bottom: 50px
+    margin-bottom: 5rem
 
 .btn
   &:visited, &:link
     text-transform: uppercase
     text-decoration: none
+    font-size: 2rem
     color: #777777
-    padding: 15px 40px
+    padding: 1.5rem 4rem
     background: white
-    border-radius: 50px
+    border-radius: 5rem
     display: inline-block
     transition: all .5s
     position: relative
   &:hover
-    transform: translateY(-4px)
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.3))
+    transform: translateY(-.4rem)
+    box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.3))
     &::after
       opacity: 0
       transform: scaleX(1.5) scaleY(1.7)
   &:active
-    transform: translateY(-2px)
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.1))
+    transform: translateY(-.2rem)
+    box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 0.1))
   &::after
     content: ''
     background: white
     width: 100%
     height: 100%
-    border-radius: 50px
+    border-radius: 5rem
     display: inline-block
     position: absolute
     top: 0
@@ -100,27 +104,27 @@ body
 @keyframes btnUp
   0%
     opacity: 0
-    transform: translateY(50px)
+    transform: translateY(5rem)
   100%
     opacity: 1
-    transform: translateX(0px)
+    transform: translateX(0rem)
 
 @keyframes leftToRight
   0%
     opacity: 0
-    transform: translateX(-100px)
+    transform: translateX(-10rem)
   80%
-    transform: translateX(10px)
+    transform: translateX(1rem)
   100%
     opacity: 1
-    transform: translateX(0px)
+    transform: translateX(0rem)
 
 @keyframes rightToLeft
   0%
     opacity: 0
-    transform: translateX(100px)
+    transform: translateX(10rem)
   80%
-    transform: translateX(-10px)
+    transform: translateX(-1rem)
   100%
     opacity: 1
-    transform: translateX(0px)
+    transform: translateX(0rem)
