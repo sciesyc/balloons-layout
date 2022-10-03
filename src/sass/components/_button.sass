@@ -1,6 +1,5 @@
 .btn
   &, &:visited, &:link
-    @include style-link
     font-size: 2rem
     padding: 1.5rem 4rem
     background: $color-white
@@ -8,6 +7,10 @@
     transition: all .5s
     position: relative
     border: none
+    @include style-link
+    @include respond(tab-land)
+    font-size: 1.8rem
+    padding: 1.5rem 3.7rem
   &:hover
     transform: translateY(-0.4rem)
     box-shadow: $box-shadow
